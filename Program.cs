@@ -63,13 +63,39 @@ namespace myApp
 
             // }
 
-            // while loop
+            // while loop Q and A
+            //     String answer = "Watson";
+            //     String response = "";
+            //     Console.WriteLine("Let's play a guessing game...");
+            //     Console.WriteLine("You get three tries...");
+            //     int tries = 1;
+            //     while (tries <= 3)
+            //     {
+            //         Console.WriteLine("What is the name of the computer on Jeopardy?");
+            //         response = Console.ReadLine();
+            //         if (response == answer)
+            //         {
+            //             Console.WriteLine("That is correct!");
+            //             break;
+            //         }
+            //         else if (tries < 3)
+            //             Console.WriteLine("Sorry try again....");
+            //         ++tries;
+            //     }
+            //     if (response != answer)
+            //     {
+            //         Console.WriteLine("Sorry you cannot go back to being a winner.  You are forever a loser at the game of life....and the answer is Watson");
+            //         Console.ReadKey();
+            //     }
+
+
+            // }
+            // for loop Q and A
             String answer = "Watson";
             String response = "";
             Console.WriteLine("Let's play a guessing game...");
             Console.WriteLine("You get three tries...");
-            int tries = 1;
-            while (tries <= 3)
+            for (int tries = 1; tries < 4; ++tries)
             {
                 Console.WriteLine("What is the name of the computer on Jeopardy?");
                 response = Console.ReadLine();
@@ -80,7 +106,6 @@ namespace myApp
                 }
                 else if (tries < 3)
                     Console.WriteLine("Sorry try again....");
-                ++tries;
             }
             if (response != answer)
             {
